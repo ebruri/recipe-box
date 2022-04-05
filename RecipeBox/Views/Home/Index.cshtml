@@ -17,7 +17,7 @@
     {
       <div class="col">
         <div class="card">
-          <div class="card-header">@Html.ActionLink($"{recipe.RecipeName}", "Details", "Recipes", new { id = recipe.RecipeId })</div>
+          <div class="card-header">@Html.ActionLink($"{recipe.RecipeName}", "Details", "Recipes", new { id = recipe.RecipeId }, new { @class = "header" })</div>
           <div class="card-body text-success">
             <h5 class="card-title">Ingredients</h5>
             <p class="card-text">
@@ -28,7 +28,7 @@
             <p>
             @foreach(var join in recipe.JoinEntities)
               {
-                @Html.ActionLink($"{join.Tag.Name}  ", "Details", "Tags", new { id = join.Tag.TagId })<text>&nbsp;&nbsp;&nbsp;</text> 
+                @Html.ActionLink($"{join.Tag.Name}  ", "Details", "Tags", new { id = join.Tag.TagId }, new { @class = "header" })<text>&nbsp;&nbsp;&nbsp;</text> 
               } 
             </p>  
           </div>

@@ -10,8 +10,8 @@
     <link rel="stylesheet" href="~/css/styles.css">
   </head>
   <body>
-    <div class="container mt-5">
-      <nav class="navbar navbar-expand-lg">
+    <div class="container my-3">
+      <nav class="navbar navbar-expand-md">
         <div class="container-fluid">
           <a class="navbar-brand" id="logo" href="../../"><h1>RB</h1></a>
           <div class="collapse navbar-collapse" id="navbarNav">
@@ -25,14 +25,17 @@
               <li class="nav-item">
                 @Html.ActionLink("Tags", "Index", "Tags", null, new { @class = "nav-link"})
               </li>
+              <li class="nav-item">
+                @Html.ActionLink("My account", "Index", "Account", null, new { @class = "nav-link"})
+              </li>
             </ul>
-            <form id="searchBar" class="form-inline my-lg-0">
+          </div>
+          <form id="searchBar">
               @using(Html.BeginForm("Index", "Home", FormMethod.Get))
               {
                 @Html.TextBox("search") <button class="btn btn-outline-success mx-3" type="submit">Search</button>
               }
-            </form>
-          </div>
+          </form>
         </div>
       </nav>
       <hr size="8" width="100%" color="gray" class="mr-5">  

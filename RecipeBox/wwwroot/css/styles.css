@@ -10,7 +10,7 @@
 }
 
 #searchBar {
-  margin-left: 15%;
+  margin-left: 150px;
 }
 
 body {
@@ -28,4 +28,28 @@ hr {
 
 #recipeCard {
 color: rgb(137, 218, 255);
+}
+
+.card-title {
+  color: rgb(11, 146, 49)
+}
+
+.header {
+  color: rgb(230, 35, 201)
+}
+
+.card-text {
+  color: rgb(1, 0, 1)
+}
+
+textArea{
+  width: 65%;
+  height: 150px;
+  padding: 12px 20px;
+  box-sizing: border-box;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+  background-color: #f8f8f8;
+  font-size: 16px;
+  resize: none;
 }

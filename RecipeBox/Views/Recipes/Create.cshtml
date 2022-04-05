@@ -9,15 +9,19 @@
 @using (Html.BeginForm())
 {
   @Html.LabelFor(model => model.RecipeName)
+  <br>
   @Html.TextBoxFor(model => model.RecipeName)
-
+  <br>
   @Html.LabelFor(model => model.Ingredients)
-  @Html.TextBoxFor(model => model.Ingredients)
-
+  <br>
+  @Html.TextAreaFor(model => model.Ingredients, new { @class = "textArea" })
+  <br>
   @Html.LabelFor(model => model.Instructions)
-  @Html.TextBoxFor(model => model.Instructions)
-
+  <br>
+  @Html.TextAreaFor(model => model.Instructions, new { @class = "textArea" })
+  <br>
   @Html.Label("Select tag")
+  <br>
   @Html.DropDownList("TagId")
 
   <input type="submit" value="Add new recipe" class="btn btn-default" />
